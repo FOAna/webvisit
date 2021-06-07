@@ -1,0 +1,21 @@
+.App {
+}
+
+.App__header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 110px;
+  background-color: aliceblue;
+}
+
+.App__main {
+  margin-left: 110px;
+}
+
+.App__background {
+  transform: translate(0, -30%);
+  width: 100%;
+  overflow-x: hidden;
+}
