@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/webvisit/static/css/main.34fb808b.chunk.css",
-    "main.js": "/webvisit/static/js/main.776bc3d5.chunk.js",
-    "main.js.map": "/webvisit/static/js/main.776bc3d5.chunk.js.map",
-    "runtime-main.js": "/webvisit/static/js/runtime-main.5dfb8dcf.js",
-    "runtime-main.js.map": "/webvisit/static/js/runtime-main.5dfb8dcf.js.map",
-    "static/js/2.8253703b.chunk.js": "/webvisit/static/js/2.8253703b.chunk.js",
-    "static/js/2.8253703b.chunk.js.map": "/webvisit/static/js/2.8253703b.chunk.js.map",
-    "static/js/3.4d2cfa4f.chunk.js": "/webvisit/static/js/3.4d2cfa4f.chunk.js",
-    "static/js/3.4d2cfa4f.chunk.js.map": "/webvisit/static/js/3.4d2cfa4f.chunk.js.map",
+    "main.css": "/webvisit/static/css/main.b11bdca7.chunk.css",
+    "main.js": "/webvisit/static/js/main.4e239c5d.chunk.js",
+    "main.js.map": "/webvisit/static/js/main.4e239c5d.chunk.js.map",
+    "runtime-main.js": "/webvisit/static/js/runtime-main.f3c2a6ce.js",
+    "runtime-main.js.map": "/webvisit/static/js/runtime-main.f3c2a6ce.js.map",
+    "static/js/2.309520e7.chunk.js": "/webvisit/static/js/2.309520e7.chunk.js",
+    "static/js/2.309520e7.chunk.js.map": "/webvisit/static/js/2.309520e7.chunk.js.map",
+    "static/js/3.13fea09f.chunk.js": "/webvisit/static/js/3.13fea09f.chunk.js",
+    "static/js/3.13fea09f.chunk.js.map": "/webvisit/static/js/3.13fea09f.chunk.js.map",
     "index.html": "/webvisit/index.html",
-    "static/css/main.34fb808b.chunk.css.map": "/webvisit/static/css/main.34fb808b.chunk.css.map",
-    "static/js/2.8253703b.chunk.js.LICENSE.txt": "/webvisit/static/js/2.8253703b.chunk.js.LICENSE.txt",
-    "static/media/night.3e69fdf5.jpg": "/webvisit/static/media/night.3e69fdf5.jpg"
+    "static/css/main.b11bdca7.chunk.css.map": "/webvisit/static/css/main.b11bdca7.chunk.css.map",
+    "static/js/2.309520e7.chunk.js.LICENSE.txt": "/webvisit/static/js/2.309520e7.chunk.js.LICENSE.txt",
+    "static/media/night.3e69fdf5.jpg": "/webvisit/static/media/night.3e69fdf5.jpg",
+    "static/media/owlIt.57e15f88.png": "/webvisit/static/media/owlIt.57e15f88.png",
+    "static/media/owlMe.7267d13e.png": "/webvisit/static/media/owlMe.7267d13e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5dfb8dcf.js",
-    "static/js/2.8253703b.chunk.js",
-    "static/css/main.34fb808b.chunk.css",
-    "static/js/main.776bc3d5.chunk.js"
+    "static/js/runtime-main.f3c2a6ce.js",
+    "static/js/2.309520e7.chunk.js",
+    "static/css/main.b11bdca7.chunk.css",
+    "static/js/main.4e239c5d.chunk.js"
   ]
 }
