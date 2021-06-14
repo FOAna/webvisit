@@ -1,7 +1,19 @@
 import night from "./images/night.jpg";
+import me from "./images/owlMe.png";
+import owl from "./images/owlIt.png";
 import "./App.css";
+import {useEffect, useState} from "react";
+import {throttle} from "lodash";
 
 function App() {
+  const [mouseX, changeMouseX] = useState(0);
+  const throttledHandleMouseMove = throttle(handleMouseMove, 250);
+  function handleMouseMove(event) {
+    changeMouseX(event.screenX);
+  }
+useEffect(() => {
+  document.addEventListener('mousemove', throttledHandleMouseMove);
+})
   return (
     <div className="App">
       <header className="App__header">
@@ -31,6 +43,8 @@ function App() {
       </header>
       <main className="App__main">
         <img className="App__background" src={night} />
+        <img className="App__me" src={me} style={{left: `calc(50vw - (594px / 2) - ${mouseX/2}px)`}}/>
+        <img className="App__owl" src={owl} style={{left: `${mouseX/2}px`}}/>
       </main>
     </div>
   );

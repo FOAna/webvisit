@@ -38,3 +38,10 @@
   width: 64px;
   height: 64px;
 }
+
+.App__me, .App__owl {
+  height: 716px; /* 95% от высоты видимой области */
+  position: absolute;
+  left: calc(50vw - (594px / 2));
+  top: 6vh;
+}
