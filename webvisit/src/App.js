@@ -5,12 +5,33 @@ import "./App.css";
 import {useEffect, useState} from "react";
 import {throttle} from "lodash";
 
+function getLeftMe(mouseX) {
+  const multiplier = (mouseX - 100) / (window.innerWidth - 200);
+  // if(mouseX>window.innerWidth-100){
+  //   return "calc(50vw - (594px / 2))";
+  // }
+  //return `calc(${mouseX}px / 3.1)`;
+  const resultMe = 100 + (window.innerWidth/2 - 297 - 100) * multiplier;
+  return `${resultMe}px`;
+}
+
+function getLeftOwl(mouseX) {
+  const multiplier = (mouseX - 100) / (window.innerWidth - 200);
+  // if (mouseX>window.innerWidth-100){
+  //   return "calc(50vw - (594px / 2))";
+  // }
+  //return `calc(100vw - (${mouseX}px / 3.1) - 594px)`;
+  const resultOwl = window.innerWidth - 644 + (window.innerWidth/2 - 297 - (window.innerWidth - 644)) * multiplier;
+  return `${resultOwl}px`;
+}
+
 function App() {
   const [mouseX, changeMouseX] = useState(0);
-  const throttledHandleMouseMove = throttle(handleMouseMove, 250);
+  const throttledHandleMouseMove = throttle(handleMouseMove, 250); //ограничение частоты перерисовки картинок
   function handleMouseMove(event) {
     changeMouseX(event.screenX);
   }
+
 useEffect(() => {
   document.addEventListener('mousemove', throttledHandleMouseMove);
 })
@@ -43,8 +64,9 @@ useEffect(() => {
       </header>
       <main className="App__main">
         <img className="App__background" src={night} />
-        <img className="App__me" src={me} style={{left: `calc(50vw - (594px / 2) - ${mouseX/2}px)`}}/>
-        <img className="App__owl" src={owl} style={{left: `${mouseX/2}px`}}/>
+        <div className="App__opaGradient"></div>
+        <img className="App__me" src={me} style={{left: getLeftMe(mouseX)}}/>
+        <img className="App__owl" src={owl} style={{left: getLeftOwl(mouseX)}}/>
       </main>
     </div>
   );
