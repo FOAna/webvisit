@@ -67,6 +67,20 @@ useEffect(() => {
         <div className="App__opaGradient"></div>
         <img className="App__me" src={me} style={{left: getLeftMe(mouseX)}}/>
         <img className="App__owl" src={owl} style={{left: getLeftOwl(mouseX)}}/>
+        <div className="App__checkColor">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur, magna scelerisque pulvinar fringilla, 
+            enim orci tristique quam, volutpat fringilla quam urna at sapien. Vivamus orci sem, lacinia in aliquam non, porta eget 
+            ante. Cras malesuada feugiat felis, quis malesuada lacus varius quis. Nullam urna diam, gravida a velit eget, faucibus 
+            congue ex. Duis facilisis est nec semper vulputate. Nam eu rutrum purus, vel facilisis odio. Sed cursus massa a orci 
+            volutpat facilisis. Curabitur dolor leo, sodales quis rutrum non, mollis eu ipsum. Ut molestie semper lacus. Donec vel 
+            aliquet orci.</p>
+            <button className="App__light">Light</button>
+            <button className="App__dark">Dark</button>
+            <button className="App__yellow">Yellow</button>
+            <button className="App__orange">Orange</button>
+            <button className="App__red">Red</button>
+            <button className="App__green">Green</button>
+        </div>
       </main>
     </div>
   );
