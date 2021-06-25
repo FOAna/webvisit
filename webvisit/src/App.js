@@ -4,23 +4,17 @@ import owl from "./images/owlIt.png";
 import "./App.css";
 import {useEffect, useState} from "react";
 import {throttle} from "lodash";
+//import Button from "./components/Button/Button.js";
+import Button from "./components/Button2/Button.js";
 
 function getLeftMe(mouseX) {
   const multiplier = (mouseX - 100) / (window.innerWidth - 200);
-  // if(mouseX>window.innerWidth-100){
-  //   return "calc(50vw - (594px / 2))";
-  // }
-  //return `calc(${mouseX}px / 3.1)`;
   const resultMe = 100 + (window.innerWidth/2 - 297 - 100) * multiplier;
   return `${resultMe}px`;
 }
 
 function getLeftOwl(mouseX) {
   const multiplier = (mouseX - 100) / (window.innerWidth - 200);
-  // if (mouseX>window.innerWidth-100){
-  //   return "calc(50vw - (594px / 2))";
-  // }
-  //return `calc(100vw - (${mouseX}px / 3.1) - 594px)`;
   const resultOwl = window.innerWidth - 644 + (window.innerWidth/2 - 297 - (window.innerWidth - 644)) * multiplier;
   return `${resultOwl}px`;
 }
@@ -35,6 +29,7 @@ function App() {
 useEffect(() => {
   document.addEventListener('mousemove', throttledHandleMouseMove);
 })
+
   return (
     <div className="App">
       <header className="App__header">
@@ -74,12 +69,16 @@ useEffect(() => {
             congue ex. Duis facilisis est nec semper vulputate. Nam eu rutrum purus, vel facilisis odio. Sed cursus massa a orci 
             volutpat facilisis. Curabitur dolor leo, sodales quis rutrum non, mollis eu ipsum. Ut molestie semper lacus. Donec vel 
             aliquet orci.</p>
-            <button className="App__light">Light</button>
-            <button className="App__dark">Dark</button>
-            <button className="App__yellow">Yellow</button>
-            <button className="App__orange">Orange</button>
-            <button className="App__red">Red</button>
-            <button className="App__green">Green</button>
+            <button className="App__light button">Light</button>
+            <button className="App__dark button">Dark</button>
+            <button className="App__yellow button">Yellow</button>
+            <button className="App__orange button">Orange</button>
+            <button className="App__red button">Red</button>
+            <button className="App__green button">Green</button>
+            {/* <Button content="Check" color="accent" onClick={() => {
+              alert("Это кажется невозможным, но оно сработало!");
+            }}/> */}
+            <Button/>
         </div>
       </main>
     </div>

@@ -1,0 +1,49 @@
+@import "../../styles/colors.css";
+
+.Button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    transition: .15s ease-in-out;
+    background-color: var(--background);
+    box-shadow: 0 0 40px 40px var(--elementDark) inset, 0 0 0 0 var(--elementDark);
+  }
+
+  .Button:hover {
+    box-shadow: 0 0 10px 0 var(--elementDark) inset, 0 0 10px 4px var(--elementDark);
+    color: var(--elementDark);
+  }
+
+  .Button_color_correct {
+    box-shadow: 0 0 40px 40px var(--correct) inset, 0 0 0 0 var(--correct);
+  }
+
+  .Button_color_correct:hover {
+    box-shadow: 0 0 10px 0 var(--correct) inset, 0 0 10px 4px var(--correct);
+    color: var(--correct);
+  }
+
+  .Button_color_error {
+    box-shadow: 0 0 40px 40px var(--error) inset, 0 0 0 0 var(--error);
+  }
+
+  .Button_color_error:hover {
+    box-shadow: 0 0 10px 0 var(--error) inset, 0 0 10px 4px var(--error);
+    color: var(--error);
+  }
+
+  .Button_color_accent {
+    box-shadow: 0 0 40px 40px var(--accentDark) inset, 0 0 0 0 var(--accentDark);
+  }
+
+  .Button_color_accent:hover {
+    box-shadow: 0 0 10px 0 var(--accentDark) inset, 0 0 10px 4px var(--accentDark);
+    color: var(--accentDark);
+  }

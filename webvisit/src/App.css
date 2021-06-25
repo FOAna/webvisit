@@ -68,7 +68,7 @@
   color: #FFF8B0;
 }
 
-.App__checkColor button {
+.App__checkColor .button {
   margin: 6px;
   padding: 16px;
   color: #FFF8B0;
